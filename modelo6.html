@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atividade 2</h1>
+    
+    <p>A pessoa mais obesa é:<span id="mensagem"></span></p>
+    <p>Nome: <span id="nome1"></span></p>
+    <p>Peso da primeira pessoa: <span id="peso1"></span></p>
+    <p>Nome: <span id="nome2"></span></p>
+    <p>Peso da segunda pessoa: <span id="peso2"></span></p>
+    
+
+    <script>
+        let nome1 =prompt ("Digite seu nome")
+        let peso1 = Number(prompt("Digite o primeiro peso"))
+        let nome2 =prompt ("Digite o nome da segunda pessoa")
+        let peso2 = Number(prompt("Digite o segundo peso"))
+
+        if (peso1 > peso2){
+            mensagem = "O " + nome1 + " é mais obesa"
+
+        }else{mensagem= "O " + nome2 +  " é a mais obesa"
+        }
+
+    
+        document.getElementById("nome1").innerHTML=nome1
+        document.getElementById("peso1").innerHTML=peso1
+        document.getElementById("nome2").innerHTML=nome2
+        document.getElementById("peso2").innerHTML=peso2
+        document.getElementById("mensagem").innerHTML=mensagem
+       
+    </script>
+    
+</body>
+</html>

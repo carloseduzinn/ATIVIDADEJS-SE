@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nome: <span id="nome1"></span></p>
+    <p>Ano de Nascimento: <span id="data_nasc"></span></p>
+    <p>Idade: <span id="idade1"></span></p>
+    <p>Nome da segunda pessoa: <span id="nome2"></span></p>
+    <p>Segundo ano de nascimento: <span id="data_nasc2"></span></p>
+    <p>Idade: <span id="idade2"></span></p>
+    <p>A pessoa mais nova é: <span  id="mensagem"></span></p>
+
+    <script>
+        let nome1 = prompt ("Digite seu nome")
+        let data_nasc = Number(prompt("Digite o ano do seu nascimento"))
+        let idade1 = 2023 - data_nasc
+        let nome2 = prompt ("Digite outro seu nome")
+        let data_nasc2 = Number(prompt("Digite outro ano de nascimento"))
+        let idade2 = 2023 - data_nasc2
+
+        if (data_nasc > data_nasc2) {
+            mensagem = "O " + nome1 + " é o mais novo"
+        }else{mensagem = " O " + nome2 + " é o mais novo"}
+
+        document.getElementById("nome1").innerHTML=nome1
+        document.getElementById("data_nasc").innerHTML=data_nasc
+        document.getElementById("idade1").innerHTML=idade1
+        document.getElementById("nome2").innerHTML=nome2
+        document.getElementById("data_nasc2").innerHTML=data_nasc2
+        document.getElementById("idade2").innerHTML=idade2
+        document.getElementById("mensagem").innerHTML=mensagem
+
+    </script>
+    
+</body>
+</html>

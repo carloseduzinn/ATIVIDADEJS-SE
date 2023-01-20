@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> atividade 1 </h1>
+    <p id="mensagem"></p>
+    <p>Seu numero:<span id="nmr"> </span>
+     <p>Segundo numero: <span id="nmr3"> </span> </p>
+<script>
+    let nmr1 = Number(prompt("Digite o primeiro numero"))
+    let nmr2 = Number(prompt("Digite o segundo numero"))
+
+
+  
+     if (nmr1 > nmr2){
+       mensagem = "o primeiro numero que voce digitou é maior"
+       
+     } else { 
+     mensagem = "O segundo número que voce digitou é menor"
+     }
+    
+
+     document.getElementById("mensagem").innerText=mensagem;
+ document.getElementById("nmr").innerHTML=nmr1;
+document.getElementById("nmr3").innerHTML=nmr2;
+
+    </script>
+
+</body>
+</html>
